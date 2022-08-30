@@ -1,0 +1,368 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+
+    .promo
+        &_header
+            font-size: 50px
+
+    .benefits
+        &_group
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 300px
+            height: 270px
+
+    .require
+        &_block
+            padding-left: 90px
+
+    .footer
+        &_info
+            width: 100%
+        &_info
+            &_sub
+                a
+                    font-size: 9px
+        &_app
+            width: 220px
+        &_social
+            width: 185px
+
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            height: 40px
+            width: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+
+    .benefits
+        &_group
+            align-items: center
+            flex-direction: column
+        &_round
+            margin-right: 0
+        &_descr
+            width: 300px
+            margin-top: 20px
+    .title
+        &_one
+            font-size: 33px
+
+    .mobile
+        min-height: 730px
+        padding: 34px 0 25px 0
+        &_item
+            width: 230px
+            height: 220px
+            padding-top: 72px
+
+            &_subtitle
+                font-weight: 300
+                font-size: 16px
+                line-height: 21px
+    
+    .uberx
+        min-height: 750px
+        padding: 28px 0 103px 0
+        &_title
+            font-size: 33px
+            line-height: 30px
+        &_auto
+            width: 90%
+
+    .require
+        padding: 25px 0 45px 0
+        &_block
+            padding-left: 36px
+        &_title
+            font-size: 18px
+        &_list
+            li
+                font-size: 13px
+        &_descr
+            font-size: 15px
+
+    .title
+        &_one    
+            font-size: 30px
+            margin-top: 20px
+            padding-bottom: 0
+
+    .footer
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            >div
+                width: 50%
+                
+        &_social
+            margin: 0 auto 13px auto
+            width: 90%
+        &_info
+            &_main
+                width: 100%
+                a
+                    font-size: 9px
+            &_lang
+                padding-bottom: 10px
+        &_app
+            width: 100%
+                
+
+
+    
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .title
+        &_one
+            font-size: 28px
+    .subtitle
+        &_one
+            font-size: 16px
+            line-height: 24px
+    .mobile
+        &_item
+            width: 486px
+            height: 178px
+            padding: 58px
+            &_subtitle
+                    line-height: 36px
+                    font-size: 18px
+
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-transform: uppercase
+            color: #FFFFFF
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+
+    .promo
+        &_header
+            line-height: 45px
+
+    .uberx
+        min-height: 650px
+        padding: 26px 0 72px 0
+
+    .require
+        &_title
+            font-size: 22px
+        &_list
+            li
+                font-size: 15px
+        &_descr
+            font-size: 21px
+            line-height: 28px
+    
+    .footer
+        &_wrapper
+            >div
+                width: 75%
+
+
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .subheader
+        height: 60px
+        top: -20px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $blue_collor 0%, #4ce2ff 100%)
+            
+        &_phone
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, $blue_collor 0%, #4ce2ff 100%)
+
+    .menu
+        width: 90%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px
+        &_link
+            display: block
+
+    .benefits
+        padding: 22px 0 36px 0
+        &_group
+            margin-top: 26px   
+        &_round
+            width: 100px
+            height: 100px
+        &_descr
+            width: 100%
+            margin-top: 27px
+        &_subtitle
+            font-size: 16px
+    
+    .title
+        &_one
+            font-size: 16px
+            margin-top: 15px
+            line-height: 16px
+    .mobile
+        padding: 18px 0 6px 0
+        &_item
+            width: 297px
+            height: 151px
+            padding: 40px
+            &_subtitle
+                    line-height: 27px
+                    font-size: 13px
+            &_plus
+                bottom: 13px
+    .subtitle
+        &_one
+            font-size: 13px
+            line-height: 22px
+    .uberx
+        min-height: 557px
+        &_auto
+            width: 93%
+        &_title
+            font-size: 18px
+            line-height: 27px
+        &_subtitle
+            font-size: 12px
+            line-height: 20px
+        &_info    
+            font-size: 13px
+            line-height: 23px
+            margin-top: 35px
+    .require
+        &_title
+            font-size: 18px
+        &_block
+            padding-left: 19px
+            margin-top: 22px
+        &_descr
+            font-size: 14px
+            line-height: 25px
+        .title
+            &_one
+                font-size: 21px
+
+    .footer
+        &_line
+            width: 270px
+        &_wrapper
+            >div
+                width: 116%
+
